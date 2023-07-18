@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="84dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="325dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageView
+        android:id="@+id/ivDoctor"
+        android:layout_width="109dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvWelcoming"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivArrow"
+        app:srcCompat="@drawable/img_1" />
+
+    <TextView
+        android:id="@+id/tvWelcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="30dp"
+        android:text="Hello, welcome!!"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivDoctor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="44dp"
+        android:text="Dr.James"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivNotify"
+        app:layout_constraintStart_toEndOf="@+id/ivDoctor"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcoming" />
+
+    <ImageView
+        android:id="@+id/ivNotify"
+        android:layout_width="42dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="71dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcoming"
+        app:srcCompat="@drawable/baseline_notification_add_24" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="355dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="Search doctor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDoctor" />
+
+    <ImageView
+        android:id="@+id/ivSearchIcon"
+        android:layout_width="54dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSearch"
+        app:layout_constraintStart_toStartOf="@+id/btnSearch"
+        app:layout_constraintTop_toTopOf="@+id/btnSearch"
+        app:srcCompat="@drawable/baseline_search_24" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="138dp"
+        android:text="Your symptoms?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
+    <ImageView
+        android:id="@+id/ivFever"
+        android:layout_width="64dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvFever1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+        app:srcCompat="@drawable/fever" />
+
+    <TextView
+        android:id="@+id/tvFever1"
+        android:layout_width="116dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="13dp"
+        android:text="Fever"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivFever"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <ImageView
+        android:id="@+id/ivHeadache"
+        android:layout_width="110dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="116dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvHeadache"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivFever"
+        app:srcCompat="@drawable/headache" />
+
+    <TextView
+        android:id="@+id/tvHeadache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="61dp"
+        android:text="Headache"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivHeadache"
+        app:layout_constraintTop_toBottomOf="@+id/tvFever1" />
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="281dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="65dp"
+        android:text="See More"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHeadache" />
+</androidx.constraintlayout.widget.ConstraintLayout>

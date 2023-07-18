@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="298dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:text="Registration Page"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="94dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilSecondName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilFirstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSecondName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilSecondName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="353dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="Sign Up"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="174dp"
+        android:text="Or"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+    <ImageView
+        android:id="@+id/ivGoogle"
+        android:layout_width="87dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivInstagram"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+        app:srcCompat="@drawable/google" />
+
+    <ImageView
+        android:id="@+id/ivFB"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+        app:srcCompat="@drawable/fb" />
+
+    <ImageView
+        android:id="@+id/ivInstagram"
+        android:layout_width="105dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivFB"
+        app:layout_constraintStart_toEndOf="@+id/ivGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/tvOr"
+        app:srcCompat="@drawable/instagram" />
+</androidx.constraintlayout.widget.ConstraintLayout>
